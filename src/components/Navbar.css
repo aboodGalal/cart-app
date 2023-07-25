@@ -1,0 +1,35 @@
+.shop{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(25,110,255);
+    position: relative;
+    cursor: pointer;
+}
+.shop .icn{
+    margin: 0;
+    color: rgb(25,110,255);
+}
+.shop:hover{
+    background-color: rgb(25,110,255);
+    transition: 0.5s;
+}
+.shop:hover .icn{
+    color: white;
+}
+.shop .cnt{
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(221,55,73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.shop ul{
+    left: -350px !important;
+    top: 110% !important;
+}
+

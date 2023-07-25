@@ -1,0 +1,11 @@
+.dr{
+    height: 100%;
+    top: 0;
+    width: 50%;
+    /* right: 0; */
+    transition: 0.5s;
+}
+
+.fth{
+    overflow: hidden;
+}

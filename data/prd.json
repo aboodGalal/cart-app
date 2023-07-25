@@ -1,0 +1,28 @@
+{
+  "prd": [
+    {
+      "id": 1,
+      "name": "Book",
+      "price": 10.99,
+      "imgUrl": "src/images/images.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Computer",
+      "price": 1.199,
+      "imgUrl": "src/images/images (1).jpg"
+    },
+    {
+      "id": 3,
+      "name": "Banana",
+      "price": 1.05,
+      "imgUrl": "src/images/images (2).jpg"
+    },
+    {
+      "id": 4,
+      "name": "Car",
+      "price": 14.000,
+      "imgUrl": "src/images/images (3).jpg"
+    }
+  ]
+}
