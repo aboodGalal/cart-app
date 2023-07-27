@@ -4,25 +4,43 @@
       "id": 1,
       "name": "Book",
       "price": 10.99,
-      "imgUrl": "src/images/images.jpg"
+      "imgUrl": "src/images/TheBookTBBblog-800x600.jpg"
     },
     {
       "id": 2,
-      "name": "Computer",
-      "price": 1.199,
-      "imgUrl": "src/images/images (1).jpg"
+      "name": "Laptop",
+      "price": 100.19,
+      "imgUrl": "src/images/Images-for-computer-page-01-1024x504.png"
     },
     {
       "id": 3,
       "name": "Banana",
       "price": 1.05,
-      "imgUrl": "src/images/images (2).jpg"
+      "imgUrl": "src/images/https___tf-cmsv2-smithsonianmag-media.s3.amazonaws.com_filer_d5_24_d5243019-e0fc-4b3c-8cdb-48e22f38bff2_istock-183380744.jpg"
     },
     {
       "id": 4,
       "name": "Car",
-      "price": 14.000,
-      "imgUrl": "src/images/images (3).jpg"
+      "price": 14000.00,
+      "imgUrl": "src/images/997312.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Phone",
+      "price": 1000.00,
+      "imgUrl": "src/images/tesla-elon-musk-phone-mockup.webp"
+    },
+    {
+      "id": 6,
+      "name": "House",
+      "price": 1200.00,
+      "imgUrl": "src/images/how-to-design-a-house.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Table",
+      "price": 10.00,
+      "imgUrl": "src/images/image42452.jpg"
     }
   ]
 }

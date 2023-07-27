@@ -50,7 +50,10 @@ function ShopItem() {
                     }) : null
                 }
             </div>
-            <h2 className='w-100 d-flex justify-content-end p-2 '>Total ${parseFloat(items.total)}</h2>
+            {/* <h2 className='w-100 d-flex justify-content-end p-2 '>Total ${parseFloat(items.total)}</h2> */}
+            {items.prds.length > 0 ? 
+            (<h2 className='w-100 d-flex justify-content-end p-2 '>Total ${parseFloat(items.total)}</h2>):
+            (<h2 className='w-100 d-flex justify-content-end p-2 '>Total $0</h2>)}
         </>
     );
 }

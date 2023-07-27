@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { useSelector, useDispatch } from 'react-redux';
-import {  bigTr  } from '../redux/shop/ShopSlice';
+import { bigTr } from '../redux/shop/ShopSlice';
 
 
-function Navbar() {
+function Navbar(props) {
     const items = useSelector((state) => state.shop)
     const dispatch = useDispatch()
 
@@ -31,12 +31,16 @@ function Navbar() {
                                 <NavLink className="nav-link" aria-current="page" to="/about">About</NavLink>
                             </li>
                         </ul>
-                        <div className='dropdown'>
-                            <div role="button"  onClick={() => dispatch(bigTr())} className='shop rounded-circle d-flex justify-content-center align-items-center me-5'>
-                                <div className='icn'><FontAwesomeIcon icon={faCartShopping} /></div>
-                                <div className='cnt rounded-circle'>{items.prds.filter((i, index, arr) => arr.findIndex((j) => j.id === i.id) === index).length}</div>
+                        {props.bl === true ? (
+                            <div className='dropdown'>
+                                <div role="button" onClick={() => dispatch(bigTr())} className='shop rounded-circle d-flex justify-content-center align-items-center me-5'>
+                                    <div className='icn'><FontAwesomeIcon icon={faCartShopping} /></div>
+                                    <div className='cnt rounded-circle'>{items.prds.filter((i, index, arr) => arr.findIndex((j) => j.id === i.id) === index).length}</div>
+                                </div>
                             </div>
-                        </div>
+                        ) : (
+                            <div className='img me-5'><img src="src/images/shopping-bag-store-logo-online-shopping-logo-design-free-vector.jpg" alt="" /></div>
+                        )}
                     </div>
                 </div>
             </nav>
