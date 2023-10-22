@@ -27,9 +27,6 @@ function Navbar(props) {
                             <li className="nav-item">
                                 <NavLink className="nav-link" aria-current="page" to="/store">Store</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" aria-current="page" to="/about">About</NavLink>
-                            </li>
                         </ul>
                         {props.bl === true ? (
                             <div className='dropdown'>

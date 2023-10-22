@@ -18,7 +18,7 @@ function Store() {
         dispatch(fetchUsers())
     }, [])
 
-
+// window.localStorage.clear()
     useEffect(() =>{
         const dr = document.querySelector(".dr")
         if(dr){
@@ -28,7 +28,6 @@ function Store() {
                 document.body.style.opacity = 1
             }else if(items.boolean === true){
                 dr.style.right = '0';
-                // document.body.style.opacity = 0.5
                 dr.style.opacity = 1
             }
         }

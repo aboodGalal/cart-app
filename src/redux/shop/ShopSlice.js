@@ -42,7 +42,7 @@ const ShopSlice = createSlice({
             state.total -= action.payload
         },
         eqTotal:(state, action) => {
-            state.total = action.payload
+            state.total === action.payload
         },
     }
 })

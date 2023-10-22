@@ -2,12 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Store from './pages/Store.jsx'
-import About from './pages/About.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
-import { createPopper } from "@popperjs/core";
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -28,10 +25,6 @@ const router = createBrowserRouter([
     element: <Store />,
   },
 
-  {
-    path: "/about",
-    element: <About />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

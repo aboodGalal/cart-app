@@ -39,6 +39,12 @@ function CartItem(props) {
     }
   }, [window.localStorage.getItem(`remove-${user.id}`)]);
 
+  useEffect(() =>{
+    if(prdNum === 0 && window.localStorage.getItem(`numPrd-${user.id}`)){
+      window.localStorage.setItem(`numPrd-${user.id}`, 0)
+    }
+  },[prdNum])
+
 
 
 
@@ -91,7 +97,6 @@ function CartItem(props) {
   }, [prdNum]);
 
 
-  // window.localStorage.clear()
 
   return (
     <div>
