@@ -29,7 +29,7 @@ function App() {
           <h3 className='text-lg-start text-center'>Shop with Ease: Your One-Stop Online Destination for All Your Needs</h3>
           <p className='text-lg-start text-center'>Discover a world of convenience and savings at our online store. From fashion to electronics, we offer a wide range of products at competitive prices. Our user-friendly website and secure checkout process make shopping online a breeze. Plus, with fast shipping and exceptional customer service, you can shop with confidence. Start exploring our online store today and see for yourself why so many customers choose us for their shopping needs.</p>
         </div>
-        <div className='d-flex flex-column me-3 img-2 flex-fill'><img src="src\images\سجل-تجاري-الكتروني-للاجانب.png" alt="" /></div>
+        <div className='d-flex flex-column me-3 img-2 flex-fill'><img src="src/assets/images/سجل-تجاري-الكتروني-للاجانب.png" alt="" /></div>
       </div>
     </>
   )

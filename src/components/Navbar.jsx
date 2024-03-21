@@ -36,7 +36,7 @@ function Navbar(props) {
                                 </div>
                             </div>
                         ) : (
-                            <div className='img me-5'><img src="src/images/shopping-bag-store-logo-online-shopping-logo-design-free-vector.jpg" alt="" /></div>
+                            <div className='img me-5'><img src="src/assets/images/shopping-bag-store-logo-online-shopping-logo-design-free-vector.jpg" alt="" /></div>
                         )}
                     </div>
                 </div>
