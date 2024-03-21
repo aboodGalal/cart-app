@@ -33,7 +33,7 @@ function ShopItem() {
 
                             <div key={item.id}>
                                 <div className='w-100 d-flex flex-row justify-content-left align-items-center mb-1 p-2'>
-                                    <img src={item.imgUrl} className='card-img-left me-3' alt='...' style={{ maxWidth: '150px', height: '150px' }} />
+                                    <img src={item.image} className='card-img-left me-3' alt='...' style={{ maxWidth: '150px', height: '150px' }} />
                                     <div className='d-flex flex-row justify-content-between w-100'>
                                         <h5 className='card-title d-flex flex-column justify-content-between'>
                                             <p>{item.name} </p>
