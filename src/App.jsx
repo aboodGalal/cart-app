@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import ShopItem from './components/ShopItem'
 import { useSelector } from 'react-redux'
 import './pages/Store.css'
 import StoreImg from './assets/images/shopping-bag-store-logo-online-shopping-logo-design-free-vector.jpg'
