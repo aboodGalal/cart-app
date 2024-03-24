@@ -6,6 +6,8 @@ import { fetchUsers } from '../redux/products/ProductsSlice'
 import StoreItem from '../components/StoreItem'
 import ShopItem from '../components/ShopItem'
 import './Store.css'
+import StoreImg from '../assets/images/shopping-bag-store-logo-online-shopping-logo-design-free-vector.jpg'
+
 
 
 function Store() {
@@ -35,7 +37,7 @@ function Store() {
     return (
         <div className='fth position-relative'>
             <div className='position-absolute  bg-white z-3 dr'><ShopItem /></div>
-            {!inf.loading && inf.data ? <Navbar bl={true}/> : null}
+            {!inf.loading && inf.data ? <Navbar  StoreImg={StoreImg} bl={true}/> : null}
             <div className=' bg-body-tertiary ps-5 pe-5'>
             <h1 className='text-start ps-3 pe-3'>Store</h1>
             {inf.loading && (<h1>Loading ...</h1>)}

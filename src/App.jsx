@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import ShopItem from './components/ShopItem'
 import { useSelector } from 'react-redux'
 import './pages/Store.css'
+import StoreImg from './assets/images/shopping-bag-store-logo-online-shopping-logo-design-free-vector.jpg'
+import LandingImg from './assets/images/سجل-تجاري-الكتروني-للاجانب.png'
 
 
 function App() {
@@ -23,13 +25,13 @@ function App() {
 
   return (
     <>
-      <Navbar bl={false}/>
+      <Navbar StoreImg={StoreImg} bl={false}/>
       <div className='d-flex justify-content-between align-items-center bg-body-tertiary p-5 flex-column-reverse flex-lg-row gap-5 hm'>
         <div className='d-flex flex-column ms-3 w-50 ch'>
           <h3 className='text-lg-start text-center'>Shop with Ease: Your One-Stop Online Destination for All Your Needs</h3>
           <p className='text-lg-start text-center'>Discover a world of convenience and savings at our online store. From fashion to electronics, we offer a wide range of products at competitive prices. Our user-friendly website and secure checkout process make shopping online a breeze. Plus, with fast shipping and exceptional customer service, you can shop with confidence. Start exploring our online store today and see for yourself why so many customers choose us for their shopping needs.</p>
         </div>
-        <div className='d-flex flex-column me-3 img-2 flex-fill'><img src="src/assets/images/سجل-تجاري-الكتروني-للاجانب.png" alt="" /></div>
+        <div className='d-flex flex-column me-3 img-2 flex-fill'><img src={LandingImg} alt="" /></div>
       </div>
     </>
   )
