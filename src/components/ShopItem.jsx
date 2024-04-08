@@ -32,15 +32,15 @@ function ShopItem() {
                         return (
 
                             <div key={item.id}>
-                                <div className='w-100 d-flex flex-row justify-content-left align-items-center mb-1 p-2'>
+                                <div className='w-100 d-flex flex-column gap-4 flex-md-row justify-content-center justify-content-md-left align-items-center mb-1 p-2'>
                                     <img src={item.image} className='card-img-left me-3' alt='...' style={{ maxWidth: '150px', height: '150px' }} />
-                                    <div className='d-flex flex-row justify-content-between w-100'>
+                                    <div className='d-flex flex-column  flex-md-row justify-content-between w-100'>
                                         <h5 className='card-title d-flex flex-column justify-content-between'>
-                                            <p>{item.name} </p>
-                                            <p className='text-body-secondary'>${item.price}</p>
+                                            {/* <p>{item.name} </p> */}
+                                            <p className='text-body-secondary d-none d-block'>${item.price}</p>
                                         </h5>
-                                        <div className='d-flex flex-row gap-2 justify-content-right align-items-center'>
-                                            <h2>${((parseInt(window.localStorage.getItem(`numPrd-${item.id}`))) * parseFloat(item.price)).toFixed(2)}</h2>
+                                        <div className='d-flex flex-row gap-2 mx-auto mx-md-0 justify-content-right align-items-center'>
+                                            <h2 className='fa-1x'>${((parseInt(window.localStorage.getItem(`numPrd-${item.id}`))) * parseFloat(item.price)).toFixed(2)}</h2>
                                             <button className='btn btn-outline-danger' onClick={() => rmm(item.id, item.price)}>x</button>
                                         </div>
                                     </div>
@@ -50,10 +50,9 @@ function ShopItem() {
                     }) : null
                 }
             </div>
-            {/* <h2 className='w-100 d-flex justify-content-end p-2 '>Total ${parseFloat(items.total)}</h2> */}
             {items.prds.length > 0 ? 
-            (<h2 className='w-100 d-flex justify-content-end p-2 '>Total ${parseFloat(items.total).toFixed(2)}</h2>):
-            (<h2 className='w-100 d-flex justify-content-end p-2 '>Total $0</h2>)}
+            (<h2 className='w-100 d-flex justify-content-end p-2 fa-1x justify-content-center justify-content-md-end'>Total ${parseFloat(items.total).toFixed(2)}</h2>):
+            (<h2 className='w-100 d-flex justify-content-end p-2  justify-content-center justify-content-md-end'>Total $0</h2>)}
         </>
     );
 }

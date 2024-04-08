@@ -15,7 +15,7 @@ export const fetchUsers = createAsyncThunk("user/fetchUsers", async () =>{
     const res = await axios.get('https://fakestoreapi.com/products');
     const data = res.data.map((product) => ({
         ...product,
-        smBoolean2: false, // add the new property here
+        smBoolean2: false, 
       }));
       return data;
 })
